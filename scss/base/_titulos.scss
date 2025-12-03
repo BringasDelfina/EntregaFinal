@@ -1,0 +1,7 @@
+/*TITULOS*/
+@use "sass:map";
+@use '../utilities/maps' as maps;
+h2, h3 {
+    color: map.get(maps.$colores, primario) !important;
+    margin-bottom: 10px;
+}

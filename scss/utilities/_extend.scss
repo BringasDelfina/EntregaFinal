@@ -1,0 +1,9 @@
+%sombra-suave {
+  box-shadow: 0 5px 14px rgba(212, 10, 10, 0.20) !important;
+  transition: box-shadow .3s ease, transform .3s ease;
+}
+
+%sombra-suave-hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 28px rgba(212, 10, 10, 0.35);
+}

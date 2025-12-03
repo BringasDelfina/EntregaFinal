@@ -1,0 +1,10 @@
+/* FOOTER*/
+@use "sass:map";
+@use '../utilities/maps' as maps;
+
+footer.bg-dark {
+    background: map.get(maps.$colores, header) !important;
+    color: #fff !important;
+    padding: 1em 0 !important;
+    margin-top: 50px !important;
+}

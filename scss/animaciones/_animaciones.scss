@@ -1,0 +1,13 @@
+// ANIMACIONES
+.animaciones {
+    .fade-in {
+        animation: fade 1s ease forwards;
+        opacity: 0;
+    }
+
+    @keyframes fade {
+        to {
+            opacity: 1;
+        }
+    }
+}
