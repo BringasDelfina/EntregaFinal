@@ -1,0 +1,276 @@
+@charset "UTF-8";
+.card-custom {
+  box-shadow: 0 5px 14px rgba(212, 10, 10, 0.2) !important;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* ESTILOS BASE*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg) !important;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/*TITULOS*/
+h2, h3 {
+  color: #e8491d !important;
+  margin-bottom: 10px;
+}
+
+.navbar-toggler {
+  border: 1px solid #fff !important;
+}
+.navbar-toggler .navbar-toggler-icon {
+  background-image: none !important;
+}
+.navbar-toggler .navbar-toggler-icon::before {
+  content: "☰";
+  font-size: 24px;
+  color: white;
+}
+
+/* HEADER */
+header.bg-white {
+  background: #333 !important;
+  color: #fff !important;
+  padding: 1em 0 !important;
+  box-shadow: none !important;
+}
+
+/* NAVBAR */
+.navbar {
+  background: none !important;
+  padding: 0 !important;
+}
+.navbar .navbar-brand {
+  color: #fff !important;
+  font-weight: bold;
+}
+.navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+.navbar .navbar-nav .nav-link {
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem !important;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #ffd700 !important;
+}
+
+/* MAIN CONTENEDOR*/
+main.container {
+  max-width: 900px !important;
+  background: #fff !important;
+  border-radius: 8px !important;
+  padding: 20px !important;
+  margin: 20px auto !important;
+}
+
+/* FOOTER*/
+footer.bg-dark {
+  background: #333 !important;
+  color: #fff !important;
+  padding: 1em 0 !important;
+  margin-top: 50px !important;
+}
+
+/* BOTÓN PRIMARIO QUE YA TENÉS */
+.btn-primary {
+  background-color: #e8491d !important;
+  border-color: #e8491d !important;
+}
+.btn-primary:hover {
+  background-color: #d8390d !important;
+  border-color: #d8390d !important;
+}
+
+/* BOTÓN NUEVO CON DEGRADADO */
+.btn-gradient {
+  background-image: linear-gradient(to right, rgb(0, 185, 126), rgb(0, 207, 148));
+  color: #fff !important;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-gradient:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 185, 126, 0.4);
+  opacity: 0.95;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
+  height: 420px;
+  overflow: hidden;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  /* Imagen con zoom */
+}
+.card .card-img-top {
+  height: 220px !important;
+  object-fit: cover;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+.card {
+  /* Texto */
+}
+.card .card-body h5.card-title {
+  font-size: 1.4em;
+  color: #333;
+}
+.card .card-body p.card-text {
+  font-size: 0.95em;
+  color: #666;
+}
+.card {
+  /* BADGES PERSONALIZADOS */
+}
+.card .badge-custom {
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #fff !important;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 0.85em;
+}
+.card .badge-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+}
+.card {
+  /* Badge DULCE */
+}
+.card .badge-dulce {
+  background-image: linear-gradient(to right, #e6c058, #ffb347);
+}
+.card {
+  /* Badge SALADA */
+}
+.card .badge-salada {
+  background-image: linear-gradient(to right, #6fa3ef, #4a77d4);
+}
+
+.animaciones .fade-in {
+  animation: fade 1s ease forwards;
+  opacity: 0;
+}
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+/* ---------------------------
+   IMÁGENES DE CARDS UNIFORMES
+----------------------------*/
+.img-fixed {
+  height: 220px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .img-fixed {
+    height: 180px;
+  }
+}
+/* ---------------------------
+   RESPONSIVE GENERAL
+----------------------------*/
+/* ----- MOBILE (hasta 576px) ----- */
+@media (max-width: 576px) {
+  main.container {
+    padding: 10px !important;
+  }
+  h1, h2, h3 {
+    text-align: center !important;
+    font-size: 1.3rem !important;
+  }
+  /* Navbar centrada */
+  .navbar-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  /* Bootstrap ya hace 1 columna en móviles,
+     pero agrego por si usás .cards-container custom */
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+  .card {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+/* ----- TABLET (hasta 768px) ----- */
+@media (max-width: 768px) {
+  main.container {
+    padding: 15px !important;
+  }
+  h2, h3 {
+    text-align: center !important;
+    font-size: 1.4rem !important;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+}
+/* ----- TABLET GRANDE / LAPTOP (hasta 992px) ----- */
+@media (max-width: 992px) {
+  main.container {
+    max-width: 95%;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 25px;
+  }
+}
+/* ----- DESKTOP GRANDE (+1200px) ----- */
+@media (min-width: 1200px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .card {
+    max-width: 320px;
+  }
+}
+/* Imagen responsive global */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
