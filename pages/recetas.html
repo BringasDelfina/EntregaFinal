@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetas - Mi Sitio de Recetas</title>
+    <!-- SEO -->
+    <meta name="description" content="Explora nuestras deliciosas recetas caseras, desde platos principales hasta postres irresistibles.">
+    <meta name="keywords" content="recetas, cocina casera, platos principales, postres, recetas fáciles, recetas rápidas">
 
+<!-- link de bootstrap y estilos personalizados --> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
-    <header class="bg-white shadow-sm">
-        <nav class="navbar navbar-expand-lg navbar-dark container">
+    <header class="bg-black header-personalizado shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-personalizada container">
             <a class="navbar-brand" href="../index.html">Mi Blog de Recetas</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -31,8 +34,8 @@
         </nav>
     </header>
 
-    <main class="container my-4">
-        <h2 class="text-center mb-4">Nuestras Mejores Preparaciones</h2>
+    <main class="container main-contenedor my-5">
+        <h1 class="text-center mb-4">Nuestras Mejores Preparaciones</h1>
 
         <!-- GRID DE RECETAS -->
         <div class="row g-4">
@@ -40,9 +43,9 @@
             <!-- TARJETA 1 -->
             <div class="col-6 col-md-4">
                 <div class="card card-custom">
-                    <img src="../assets/css/imagenes/lasagna.jpg" class="card-img-top" alt="Imagen de Lasagna Clásica">
+                    <img src="../assets/css/imagenes/lasagna.webp" class="card-img-top" alt="Imagen de Lasagna Clásica">
                     <div class="card-body">
-                        <h5 class="card-title">Lasagna Clásica</h5>
+                        <h3 class="card-title titulo-secundario ">Lasagna Clásica</h3>
                         <p class="card-text">Una receta tradicional y deliciosa que no falla.</p>
                         <span class="badge-custom badge-salada">Salada</span>
                     </div>
@@ -52,9 +55,9 @@
             <!-- TARJETA 2 -->
             <div class="col-6 col-md-4">
                 <div class="card card-custom">
-                    <img src="../assets/css/imagenes/pollo.jpeg" class="card-img-top" alt="Imagen de Pollo al Curry">
+                    <img src="../assets/css/imagenes/pollo.webp" class="card-img-top" alt="Imagen de Pollo al Curry">
                     <div class="card-body">
-                        <h5 class="card-title">Pollo al Curry</h5>
+                        <h3 class="card-title titulo-secundario ">Pollo al Curry</h3>
                         <p class="card-text">Un plato exótico, rápido y lleno de sabor.</p>
                         <span class="badge-custom badge-salada">Salada</span>
                     </div>
@@ -64,9 +67,9 @@
             <!-- TARJETA 3 -->
             <div class="col-6 col-md-4">
                 <div class="card card-custom">
-                    <img src="../assets/css/imagenes/brownie.jpeg" class="card-img-top" alt="Imagen de Brownies de Chocolate">
+                    <img src="../assets/css/imagenes/brownie.webp" class="card-img-top" alt="Imagen de Brownies de Chocolate">
                     <div class="card-body">
-                        <h5 class="card-title">Brownies de Chocolate</h5>
+                        <h3 class="card-title titulo-secundario ">Brownies de Chocolate</h3>
                         <p class="card-text">Crujientes por fuera y suaves por dentro.</p>
                         <span class="badge-custom badge-dulce">Dulce</span>
                     </div>
@@ -76,9 +79,9 @@
             <!-- TARJETA 4 -->
             <div class="col-6 col-md-4">
                 <div class="card card-custom">
-                    <img src="../assets/css/imagenes/destacada3.png" class="card-img-top" alt="Imagen de Torta de Canela">
+                    <img src="../assets/css/imagenes/destacada3.webp" class="card-img-top" alt="Imagen de Torta de Canela">
                     <div class="card-body">
-                        <h5 class="card-title">Torta de Canela</h5>
+                        <h3 class="card-title titulo-secundario ">Torta de Canela</h3>
                         <p class="card-text">Esponjosa, aromática y perfecta para la merienda.</p>
                         <span class="badge-custom badge-dulce">Dulce</span>
                     </div>
@@ -88,11 +91,23 @@
             <!-- TARJETA 5 -->
             <div class="col-6 col-md-4">
                 <div class="card card-custom">
-                    <img src="../assets/css/imagenes/torta.jpeg" class="card-img-top" alt="Imagen de Tarta de Manzana">
+                    <img src="../assets/css/imagenes/torta.webp" class="card-img-top" alt="Imagen de Tarta de Manzana">
                     <div class="card-body">
-                        <h5 class="card-title">Tarta de Manzana</h5>
+                        <h3 class="card-title titulo-secundario ">Tarta de Manzana</h3>
                         <p class="card-text">El clásico postre con canela y vainilla.</p>
                         <span class="badge-custom badge-dulce">Dulce</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 6 -->
+            <div class="col-6 col-md-4">
+                <div class="card card-custom">
+                    <img src="../assets/css/imagenes/tarta.webp" class="card-img-top" alt="Tarta de Verduras">
+                    <div class="card-body">
+                        <h3 class="card-title titulo-secundario ">Tarta de Verduras</h3>
+                        <p class="card-text">Tarta facil de hacer y muy rica.</p>
+                        <span class="badge-custom badge-salada">Salada</span>
                     </div>
                 </div>
             </div>

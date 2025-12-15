@@ -1,16 +1,17 @@
 @use "sass:map";
 @use "../utilities/extend";
-@use '../utilities/mixins';
-@use '../utilities/maps' as maps;
+@use "../utilities/mixins";
+@use "../utilities/maps" as maps;
 
 .card-custom {
     @extend %sombra-suave;
 }
+
+/* Estilos de la card */
 .card {
     @include mixins.card-base;
-    height: 420px;
-
-    overflow: hidden; 
+    height: 460px;
+    overflow: hidden;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 
     /* Imagen con zoom */
@@ -38,40 +39,4 @@
         }
     }
 
-    /* BADGES PERSONALIZADOS */
-    .badge-custom {
-        padding: 6px 14px;
-        border-radius: 12px;
-        font-weight: 600;
-        color: #fff !important;
-        display: inline-block;
-        transition: all .3s ease;
-        cursor: pointer;
-        margin-top: 5px;
-        font-size: 0.85em;
-    }
-
-    .badge-custom:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 12px rgba(0,0,0,.2);
-        opacity: .9;
-    }
-
-    /* Badge DULCE */
-    .badge-dulce {
-        background-image: linear-gradient(
-            to right,
-            map.get(maps.$colores, dulce-start),
-            map.get(maps.$colores, dulce-end)
-        );
-    }
-
-    /* Badge SALADA */
-    .badge-salada {
-        background-image: linear-gradient(
-            to right,
-            map.get(maps.$colores, salado-start),
-            map.get(maps.$colores, salado-end)
-        );
-    }
 }

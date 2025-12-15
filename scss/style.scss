@@ -1,15 +1,44 @@
+// @use 'utilities/maps';
+// @use 'utilities/extend';
+// @use 'utilities/mixins';
+// @use 'abstracts/variables';
+// @use 'base/estiloBase';
+// @use 'base/titulos';
+// @use 'base/icono';
+// @use 'layout/header';
+// @use 'layout/navegacion';
+// @use 'layout/mainContenedor';
+// @use 'layout/footer';
+// @use 'components/botones';
+// @use 'components/cards';
+// @use 'animaciones/animaciones';
+// @use 'responsive/responsive';
+
+// 1. ABSTRACTS (variables, mixins, maps)
+@use 'abstracts/variables';
+@use 'utilities/mixins';
 @use 'utilities/maps';
 @use 'utilities/extend';
-@use 'utilities/mixins';
-@use 'abstracts/variables';
+
+// 2. BASE (reseteos, tipografías, estilos generales)
 @use 'base/estiloBase';
 @use 'base/titulos';
+@use 'base/contacto';
 @use 'base/icono';
+
+// 3. LAYOUT (header, nav, contenedores, footer)
 @use 'layout/header';
 @use 'layout/navegacion';
 @use 'layout/mainContenedor';
 @use 'layout/footer';
+
+// 4. COMPONENTS (botones, cards, módulos reutilizables)
 @use 'components/botones';
 @use 'components/cards';
+@use 'components/badges';
+
+// 5. ANIMACIONES
 @use 'animaciones/animaciones';
+
+// 6. RESPONSIVE
 @use 'responsive/responsive';

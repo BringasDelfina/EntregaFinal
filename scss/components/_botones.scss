@@ -1,18 +1,18 @@
 @use "sass:map";
 @use '../utilities/maps' as maps;
 
-/* BOTÓN PRIMARIO QUE YA TENÉS */
+
 .btn-primary {
-    background-color: map.get(maps.$colores, primario) !important;
-    border-color: map.get(maps.$colores, primario) !important;
+    background-color: map.get(maps.$colores, primario) ;
+    border-color: map.get(maps.$colores, primario) ;
 
     &:hover {
-        background-color: map.get(maps.$colores, primario-hover) !important;
-        border-color: map.get(maps.$colores, primario-hover) !important;
+        background-color: map.get(maps.$colores, primario-hover) ;
+        border-color: map.get(maps.$colores, primario-hover) ;
     }
 }
 
-/* BOTÓN NUEVO CON DEGRADADO */
+/* BOTÓN CON DEGRADADO */
 .btn-gradient {
     background-image: linear-gradient(
         to right,
@@ -20,7 +20,7 @@
         map.get(maps.$colores, gradient-end)
     );
     
-    color: #fff !important;
+    color: #fff ;
     border: none;
     padding: 10px 22px;
     border-radius: .5rem;

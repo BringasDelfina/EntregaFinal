@@ -1,108 +1,74 @@
-/* ---------------------------
-   IMÁGENES DE CARDS UNIFORMES
-----------------------------*/
-.img-fixed {
-    height: 220px;
-    object-fit: cover;
-}
-
-@media (max-width: 768px) {
-    .img-fixed {
-        height: 180px;
-    }
-}
-
-/* ---------------------------
-   RESPONSIVE GENERAL
-----------------------------*/
-
-/* ----- MOBILE (hasta 576px) ----- */
+/* MOBILE */
 @media (max-width: 576px) {
-
-    main.container {
-        padding: 10px !important;
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
-
-    h1, h2, h3 {
-        text-align: center !important;
-        font-size: 1.3rem !important;
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
-
-    /* Navbar centrada */
-    .navbar-nav {
-        width: 100%;
+    .card {
+        min-height: 420px;
         display: flex;
         flex-direction: column;
-        gap: 12px;
-        text-align: center;
+        justify-content: space-between;
     }
+}
 
-    /* Bootstrap ya hace 1 columna en móviles,
-       pero agrego por si usás .cards-container custom */
-    .cards-container {
-        display: grid;
-        grid-template-columns: 1fr !important;
-        gap: 20px;
-    }
-
-    .card {
+    .img-fixed {
+        height: 180px;
+        object-fit: cover;
         width: 100%;
-        margin: 0 auto;
-    }
-}
-
-/* ----- TABLET (hasta 768px) ----- */
-@media (max-width: 768px) {
-
-    main.container {
-        padding: 15px !important;
     }
 
-    h2, h3 {
-        text-align: center !important;
-        font-size: 1.4rem !important;
-    }
 
+/* TABLET */
+@media (max-width:768px) {
+    .img-fixed { height: 180px; }
     .cards-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-columns: repeat(2,1fr);
         gap: 20px;
     }
-
     .card {
-        margin-bottom: 20px;
+        min-height: 420px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 
-/* ----- TABLET GRANDE / LAPTOP (hasta 992px) ----- */
-@media (max-width: 992px) {
-
-    main.container {
-        max-width: 95%;
-    }
-
-    .cards-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 25px;
+/* LAPTOP */
+@media (max-width:992px) {
+    main.container { max-width: 95%; }
+    .card {
+        min-height: 420px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 
-/* ----- DESKTOP GRANDE (+1200px) ----- */
-@media (min-width: 1200px) {
-
+/* DESKTOP */
+@media (min-width:1200px) {
     .cards-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3,1fr);
         gap: 30px;
     }
-
-    .card {
-        max-width: 320px;
+    .img-fixed {
+        height: 180px;
+        object-fit: cover;
+        width: 100%;
     }
-}
-
-/* Imagen responsive global */
-img {
-    max-width: 100%;
-    height: auto;
+    .card {
+        min-height: 420px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }

@@ -1,0 +1,14 @@
+@use "sass:map";
+@use '../utilities/maps' as maps;
+
+.contacto-color {
+    a,
+    label,
+    .form-text {
+        color: #1b27c5; ;
+    }
+
+    a:hover {
+        color: #044949 ;
+    }
+}

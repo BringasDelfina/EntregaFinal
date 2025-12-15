@@ -2,12 +2,12 @@
 @use "sass:map";
 @use '../utilities/maps' as maps;
 
-header {
+.header-personalizado {
     &.bg-white {
-        background: map.get(maps.$colores, header) !important;
-        color: #fff !important;
-        padding: 1em 0 !important;
-        box-shadow: none !important;
+        background: map.get(maps.$colores, header) ;
+        color: #fff ;
+        padding: 1em 0 ;
+        box-shadow: none ;
     }
 }
 

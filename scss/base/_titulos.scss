@@ -1,7 +1,13 @@
 /*TITULOS*/
 @use "sass:map";
 @use '../utilities/maps' as maps;
-h2, h3 {
-    color: map.get(maps.$colores, primario) !important;
+
+.titulo-principal {
+    color: map.get(maps.$colores, primario);
+    margin-bottom: 10px;
+}
+
+.titulo-secundario {
+    color: map.get(maps.$colores, primario);
     margin-bottom: 10px;
 }

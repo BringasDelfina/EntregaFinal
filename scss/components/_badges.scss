@@ -1,0 +1,26 @@
+/* BADGES CUSTOM */
+.badge-custom {
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    transition: .3s;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: .85em;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0,0,0,.2);
+        opacity: .9;
+    }
+}
+
+.badge-dulce {
+    background-image: linear-gradient(to right, #e6c058, #ffb347);
+}
+
+.badge-salada {
+    background-image: linear-gradient(to right, #6fa3ef, #4a77d4);
+}
