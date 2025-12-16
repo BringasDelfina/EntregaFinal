@@ -3,7 +3,7 @@
 @use "../utilities/mixins";
 @use "../utilities/maps" as maps;
 
-.card-custom {
+.card.card-custom {
     @extend %sombra-suave;
 }
 

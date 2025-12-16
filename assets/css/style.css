@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.card-custom {
+.card.card-custom {
   box-shadow: 0 5px 14px rgba(212, 10, 10, 0.2);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
